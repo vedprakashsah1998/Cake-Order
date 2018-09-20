@@ -1,0 +1,17 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar 
+ */
+
+grammar grammar;
+
+public <number> = ( zero | one | two | three | four | five | six | seven | nine | ten
+                   | eleven | twelve | thirteen | fourteen | fifteen | sixteen | seventeen | eighteen | nineteen | twenty 
+                   | thirty | forty | fifty | sixty | seventy | eighty | ninety |
+		            hundred | thousand | million | billion)+;                   
+public <syntax> = <number>{1} (plus | minus | multiply | division){1} <number>{1}; 
+public<varible>=(a | b |c | d |e | f |g | h |i | j |k | l |m | n |o | p |q | r |s | t |u | v |w | x |y | z);
+public <trolling> = ( who are you | who is your boss | what are you doing | where are you living | hi | where i am from | who developed you | what is your favourite colour | are you lie | who is your Teacher | who is your mom | what is your language | play a song | next song |
+open paint |close paint | browser | close browser | player |facebook | task manager | close task manager | open pad | close pad | start excel | stop excel | site mail | mail | excel | close excel | car | sing a song);
+public <feelings> = ( how are you |  hello jarvis );
